@@ -1,14 +1,13 @@
 <?php
 require_once 'google-api-php-client-2.4.1\vendor\autoload.php';
 $client = new \Google_Client();
-$client->setApplicationName('YOURAPPNAME');
+$client->setApplicationName('GBUJobs');
 $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
 $client->setAccessType('offline');
-$client->setAuthConfig(__DIR__ . '/your-think-space-d1149fde842f.json');
+$client->setAuthConfig(__DIR__ . '/api.json');
 $service = new Google_Service_Sheets($client);
-$spreadsheetId = "1lZeDeYNZoGATw8DqdSy2hN9jQexbmMHsNC4CCKeRbcM";
-$range = 'congress';
+$spreadsheetId = "1W89pRZ1FTBrc04st-h7nhk8iuPeIc85dBMr1byAV64U";
+$range = 'responses';
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 $values = $response->getValues();
-
- ?>
+?>

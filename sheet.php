@@ -28,20 +28,20 @@ if (empty($values)) {
    echo "No Data Found";
 } else {
    //$mask = "%10 %-10s %s\n";
+    $b = 0;
    foreach ($values as $row) {
-      //echo sprintf($mask, $row[2], $row[1], $row[0])."<br >";
-      // if($row[1] == 'AK'){
-      //     echo sprintf($mask, $row[1],$row[2],$row[3],$row[4])."<br >";
-      // }
-      $name = $row[0];
-      $age = $row[1];
-      $phone = $row[2];
-      $cred = $row[3];
+      $name = $row[0]; $ncs_id = $row[1]; $grade = $row[2]; $ws_name = $row[3]; $ws_date = $row[4];
+      $cred = $row[2]; $url = $row[6];
       if(strcmp($credd, $cred) == 0){
-        echo "Name ".$name."<br>";
-        echo "age ".$age."<br>";
-        echo "phone ".$phone."<br>";
+        $b = 1;
+        echo "";
+        echo "<tr><td>Name ".$name."<br></td></tr>";
+        echo "<tr><td>Age ".$ncs_id."<br></td></tr>";
+        echo "<tr><td>Grade ".$grade."<br></td></tr>";
       }
+   }
+   if($b == 0){
+     echo "<tr><td>No Record Found</td></tr>";
    }
 }
 }

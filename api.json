@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "gbu-jobs",
+  "private_key_id": "7c980e0e5738b685173821fadd3f64828363504c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsxIJ2Hfiph+vt\nCvYjEeD8b6Nl5IYek8h6DyED5CTz/pfbVCo1qoAZcbQLx3fCRZfEHD6RoMpgl2hq\nqb4K8GicyH3rYTdyBFHJzAElgA+BUH4XOOsgJQZ0/YWprPjuS4N0U6+8ENQC28Y8\nr043iTNZk4Qks3LLDWY6iHcDG/5ThSrN2ByQT3j10wzl5q8373yTCQjUlDX6V1VI\nTlS1O9pa93D38KIVdIgWglD+19YHEWAVAzwxQxZor0NhTBjzf7b/vWTE1NXG6XvO\nW46IMQ1bNuGycFaqz38B8MhDcXNh8VbF3zhS88Tm8k8DfYOWkfXd//WJDm2jYX6o\nHhw0p1k5AgMBAAECggEAAu2as3NLF157IGue49XF/SlMOOogXszM6Uqv2c/IU41V\nWA2LYJj47lV3wnpZPITu7082PUQfIfd2+NXTJ37PGxcn0TE23hsWIsgvHcpXmO67\nEFwx2fveqeVxGkDZADrt6a8Qa6zSVxEQAU/MUNMluGcwZmnXMHtT5/qPn9Ed5J72\nSJ4/ayYxi2rjQvkYR3e+3dCHkdba2TVDZ/z6ZY60nhr9/gz/zlGxmSAutBfQlSLu\ngSxYOfsnuH9BJUNN0ubnN/EFImB5qn+D0Y8J0o9KhReBr47Lf2JhI5j3PnvOkeAx\nQ5t5fsk4W71lgET/wY0nkFXWBs86xcJxoOYYh4ArgQKBgQDeh6Vw0vwjIPyduccj\nX1ESwST6uvQ+kBITxGUZh0bdRwuw8YRqwbDw9nuJAfA7ZZm6liN2hCEG7Ca7rE1V\nFarFiaDHiDzE4GPwXq91Fls7Ebt7o7JMH8j4J48Z7LWuRZim4Rk3K3IVobMyeGpJ\nmifbvAEkNlXMmtZuBk+Aasx+wQKBgQDGwM2oIiHpT0sDZlnp3ZF8wzjWwjwR570E\n16hhBt4wWCx9si+iXfZt2qWApmovadytXX1wq9XIz5FQGdbuOfgtl+/E9bKeTY9T\nEXDlC/BsRXFPHEmF+ovLIvT9sQKg8RJq6Z20k5t27bj6KguOrISUhG5mO+cbw4YT\n89yvIEtweQKBgQC5rN8bK8BcI1sE1A1X82E3T9dmKfY/+YBL5BQjX99+JJiZtHuz\nhBf6hv9+yxJCzTyfFkVSz16rYwHSmCsScnjCSFrSAlgKQdzBpI+sF9JZkCsqN+U+\nZUsP3BooHH1fgwyjObELeoG/kONvmk+9SBY33z/okjm29f8zYKqXUQV+QQKBgQCw\nU5Cgn1dygzRLmdwfDMDr7M5aSQu93tfkmeb53Xv1a+Rcx15XMAFWSGoYDouZ8NMk\nwxJsiSYq92s1oxb5VliFKow/MrL6mliTG6AKtGLhy2HRC4l24WZwG106THXGjtkG\nHKga8fE0u4Yl+nMyan9cu3iuHmrUSMyEmw6oF4CWEQKBgCCvh/KQyRYhgDZuxl7/\nKsDCtC2aHfQbfvR8n9y+p0+ijPxN0LfEcpod/Pf/2IXCBZpqJY8r9rjGKt2orlZK\n3wfxZokNbbc+kL7kGR+D7z3aqTtHNQ3zofwcPb+m98vCiz4R5AkkONDt9DnTRmHG\ncLWguonLpic7muGi6OIl/NXG\n-----END PRIVATE KEY-----\n",
+  "client_email": "gbujobs@gbu-jobs.iam.gserviceaccount.com",
+  "client_id": "117000533631819990272",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gbujobs%40gbu-jobs.iam.gserviceaccount.com"
+}
