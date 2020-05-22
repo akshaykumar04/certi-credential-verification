@@ -34,6 +34,8 @@ if (isset($_POST['submit'])) {
     $credd = $_POST["credd"];
     if (empty($values)) {
         echo "No Data Found";
+    } else if(empty($credd)){
+      $b = 2;
     } else {
         //$mask = "%10 %-10s %s\n";
         $b = 0;
@@ -49,17 +51,19 @@ if (isset($_POST['submit'])) {
             $link = $row[8];
             if (strcmp($credd, $ncs_id) == 0) {
                 $b = 1;
-                echo "<li class='list-group-item'><h3>".$name."</h3></li>";
-                echo "<li class='list-group-item'>".$mail."</li>";
-                echo "<li class='list-group-item'>NCS ID:<br />".$ncs_id."</li>";
-                echo "<li class='list-group-item'>Grade:<br />".$grade."</li>";
-                echo "<li class='list-group-item'>Workshop Name: ".$ws_name."<br /><small>Date:".$ws_date."</small></li>";
+                echo "<li class='list-group-item'><strong style ='font-size: 25px;'>$name</strong>";
+                echo "<br /><strong>Email: </strong>$mail";
+                echo "<br /><strong>NCS ID: </strong>".$ncs_id;
+                echo "<br /><strong>Grade: </strong>".$grade;
+                echo "<br /><strong>Workshop Name: </strong>".$ws_name."<br /><strong>Date: </strong>".$ws_date;
                 // echo "<li class='list-group-item'><small>Workshop Date:".$ws_date."</small></li>";
-                echo "<li class='list-group-item'><a href= '$link'>.$link.</a></li>";
+                echo "<br /><a href= '$link'>$link</a></li>";
             }
         }
         if ($b == 0) {
             echo "<li class='list-group-item'>No Record Found</li>";
+        } else {
+          echo "";
         }
         echo "</ul>";
     }
