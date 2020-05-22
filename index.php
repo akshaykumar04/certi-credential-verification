@@ -18,7 +18,7 @@
     </div>
     <div class="row justify-content-md-center">
           <div class="col-8"><br>
-          <form action="sheet.php" method="POST">
+          <form action="index.php" method="POST">
           <div class="form-group">
             <label for="exampleInputEmail1">Enter Credential</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Credential" name="credd">
