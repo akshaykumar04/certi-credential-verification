@@ -51,9 +51,9 @@ if (isset($_POST['submit'])) {
                 $b = 1;
                 echo "<li class='list-group-item'><h3>".$name."</h3></li>";
                 echo "<li class='list-group-item'>".$mail."</li>";
-                echo "<li class='list-group-item'>".$ncs_id."</li>";
-                echo "<li class='list-group-item'>Grade ".$grade."</li>";
-                echo "<li class='list-group-item'>Workshop Name:".$ws_name."<br /><small>Date:".$ws_date."</small></li>";
+                echo "<li class='list-group-item'>NCS ID:<br />".$ncs_id."</li>";
+                echo "<li class='list-group-item'>Grade:<br />".$grade."</li>";
+                echo "<li class='list-group-item'>Workshop Name: ".$ws_name."<br /><small>Date:".$ws_date."</small></li>";
                 // echo "<li class='list-group-item'><small>Workshop Date:".$ws_date."</small></li>";
                 echo "<li class='list-group-item'><a href= '$link'>.$link.</a></li>";
             }

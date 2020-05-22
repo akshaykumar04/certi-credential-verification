@@ -7,7 +7,7 @@ $client->setAccessType('offline');
 $client->setAuthConfig(__DIR__ . '/api.json');
 $service = new Google_Service_Sheets($client);
 $spreadsheetId = "1W89pRZ1FTBrc04st-h7nhk8iuPeIc85dBMr1byAV64U";
-$range = 'responses';
+$range = 'Form responses 1';
 $response = $service->spreadsheets_values->get($spreadsheetId, $range);
 $values = $response->getValues();
 ?>
