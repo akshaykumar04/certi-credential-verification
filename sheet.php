@@ -12,23 +12,23 @@
     <title>Credential</title>
   </head>
   <body><br><br>
-    <div class="container">
-      <div class="row">
+  <div class="container">
+    <div class="row">
         <h2>Check Credential</h2>
+    </div>
+    <div class="row justify-content-md-center">
+          <div class="col-8"><br>
+          <form action="sheet.php" method="POST">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Enter Credential</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Credential" name="credd">
+          </div>
+          <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+          </form>
+          </div>
       </div>
-      <div class="row justify-content-md-center">
-        <div class="col-8"><br>
-    <form action="sheet.php" method="POST">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Enter Credential</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Credential" name="credd">
-      </div>
-      <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-    </form>
-        </div>
-      </div>
-      <div class="row justify-content-md-center">
-        <div class="col-10"><br>
+    <div class="row justify-content-md-center">
+      <div class="col-10"><br>
 <?php
 if (isset($_POST['submit'])) {
     $credd = $_POST["credd"];
@@ -53,8 +53,8 @@ if (isset($_POST['submit'])) {
                 echo "<li class='list-group-item'>".$mail."</li>";
                 echo "<li class='list-group-item'>".$ncs_id."</li>";
                 echo "<li class='list-group-item'>Grade ".$grade."</li>";
-                echo "<li class='list-group-item'>".$ws_name."</li>";
-                echo "<li class='list-group-item'>".$ws_date."</li>";
+                echo "<li class='list-group-item'>Workshop Name:".$ws_name."<br /><small>Date:".$ws_date."</small></li>";
+                // echo "<li class='list-group-item'><small>Workshop Date:".$ws_date."</small></li>";
                 echo "<li class='list-group-item'><a href= '$link'>.$link.</a></li>";
             }
         }
