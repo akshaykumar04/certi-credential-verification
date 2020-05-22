@@ -34,6 +34,8 @@ if (isset($_POST['submit'])) {
     $credd = $_POST["credd"];
     if (empty($values)) {
         echo "No Data Found";
+    } else if(empty($credd)){
+      $b = 2;
     } else {
         //$mask = "%10 %-10s %s\n";
         $b = 0;
@@ -55,11 +57,13 @@ if (isset($_POST['submit'])) {
                 echo "<br /><strong>Grade: </strong>".$grade;
                 echo "<br /><strong>Workshop Name: </strong>".$ws_name."<br /><strong>Date: </strong>".$ws_date;
                 // echo "<li class='list-group-item'><small>Workshop Date:".$ws_date."</small></li>";
-                echo "<br /><a href= '$link'>.$link.</a></li>";
+                echo "<br /><a href= '$link'>$link</a></li>";
             }
         }
         if ($b == 0) {
             echo "<li class='list-group-item'>No Record Found</li>";
+        } else {
+          echo "";
         }
         echo "</ul>";
     }
