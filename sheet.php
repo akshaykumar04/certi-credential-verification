@@ -11,41 +11,63 @@
 
     <title>Credential</title>
   </head>
-  <body>
+  <body><br><br>
     <div class="container">
+      <div class="row">
+        <h2>Check Credential</h2>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-8"><br>
     <form action="sheet.php" method="POST">
       <div class="form-group">
-        <label for="exampleInputEmail1">Enter Credential To Check</label>
+        <label for="exampleInputEmail1">Enter Credential</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Credential" name="credd">
       </div>
       <button type="submit" class="btn btn-primary" name="submit">Submit</button>
     </form>
-  </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-10"><br>
 <?php
-if( isset( $_POST['submit'] )){
-  $credd = $_POST["credd"];
-if (empty($values)) {
-   echo "No Data Found";
-} else {
-   //$mask = "%10 %-10s %s\n";
-    $b = 0;
-   foreach ($values as $row) {
-      $name = $row[0]; $ncs_id = $row[1]; $grade = $row[2]; $ws_name = $row[3]; $ws_date = $row[4];
-      $cred = $row[2]; $url = $row[6];
-      if(strcmp($credd, $cred) == 0){
-        $b = 1;
-        echo "";
-        echo "<tr><td>Name ".$name."<br></td></tr>";
-        echo "<tr><td>Age ".$ncs_id."<br></td></tr>";
-        echo "<tr><td>Grade ".$grade."<br></td></tr>";
-      }
-   }
-   if($b == 0){
-     echo "<tr><td>No Record Found</td></tr>";
-   }
-}
+if (isset($_POST['submit'])) {
+    $credd = $_POST["credd"];
+    if (empty($values)) {
+        echo "No Data Found";
+    } else {
+        //$mask = "%10 %-10s %s\n";
+        $b = 0;
+        echo "<ul class='list-group'>";
+        foreach ($values as $row) {
+            $name = $row[2];
+            $mail = $row[1];
+            $ncs_id = $row[3];
+            $grade = $row[4];
+            $ws_name = $row[5];
+            $ws_date = $row[6];
+            $cred = $row[2];
+            $link = $row[8];
+            if (strcmp($credd, $ncs_id) == 0) {
+                $b = 1;
+                echo "<li class='list-group-item'><h3>".$name."</h3></li>";
+                echo "<li class='list-group-item'>".$mail."</li>";
+                echo "<li class='list-group-item'>".$ncs_id."</li>";
+                echo "<li class='list-group-item'>Grade ".$grade."</li>";
+                echo "<li class='list-group-item'>".$ws_name."</li>";
+                echo "<li class='list-group-item'>".$ws_date."</li>";
+                echo "<li class='list-group-item'><a href= '$link'>.$link.</a></li>";
+            }
+        }
+        if ($b == 0) {
+            echo "<li class='list-group-item'>No Record Found</li>";
+        }
+        echo "</ul>";
+    }
 }
  ?>
+ </div>
+</div>
+ </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
